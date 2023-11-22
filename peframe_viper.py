@@ -18,6 +18,8 @@ class Peframe(Module):
     
     def __init__(self):
         super(Peframe, self).__init__()
+        subparsers = self.parser.add_subparsers(dest='subname')
+        subparsers.add_parser('run', help='Run peframe')
         
     def run(self):
         if not __sessions__.is_set():
