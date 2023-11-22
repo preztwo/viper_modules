@@ -1,5 +1,13 @@
 #!/usr/bin/python3
 
+import viper
+from viper.common.out import bold
+from viper.common.abstracts import Module
+from viper.common.utils import get_type, get_md5
+from viper.core.database import Database
+from viper.core.storage import get_sample_path
+from viper.core.session import __sessions__
+
 import peframe.peframe as pef
 class Peframe(Module):
     cmd = 'peframe'
