@@ -25,5 +25,5 @@ class Peframe(Module):
             return
         self.log('info','peframe starts now (can take a while)')
         fileinfo = pef.analyse(__sessions__.current.file.path)
-        self.log('item',"{}".format(fileinfo)
+        self.log('item',"{}".format(fileinfo))
 
